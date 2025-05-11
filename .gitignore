@@ -1,0 +1,6 @@
+node_modules
+lib
+.parcel-cache
+dist
+*.mjs
+!src/client.mjs

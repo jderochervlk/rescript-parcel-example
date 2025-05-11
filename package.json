@@ -1,0 +1,36 @@
+{
+  "name": "rescript-parcel-rsc",
+  "version": "1.0.0",
+  "description": "An example app using Rescript, Parcel, React, and RSC.",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "res:build": "rescript",
+    "parcel": "parcel",
+    "dev:tailwind": "pnpm dlx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --watch",
+    "dev:rescript": "rescript -w"
+  },
+  "targets": {
+    "react-static": {
+      "source": "pages/**/*.{mjs,mdx}",
+      "context": "react-server"
+    }
+  },
+  "dependencies": {
+    "@parcel/rsc": "^2.14.4",
+    "@rescript/react": "^0.14.0-rc.1",
+    "@rescript/webapi": "^0.1.0-experimental-72e203b",
+    "@tailwindcss/cli": "^4.1.6",
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rescript": "^12.0.0-alpha.12",
+    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "@parcel/packager-react-static": "^2.14.4",
+    "@parcel/transformer-react-static": "^2.14.4",
+    "@tailwindcss/postcss": "^4.1.6",
+    "postcss": "^8.5.3"
+  }
+}

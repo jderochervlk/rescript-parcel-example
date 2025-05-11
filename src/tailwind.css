@@ -1,0 +1,11 @@
+/* Use any font you want! */
+@import url('https://fonts.cdnfonts.com/css/colwell');
+
+/* https: //tailwindcss.com/ */
+@import "tailwindcss";
+@source ".js";
+
+/* https: //tailwindcss.com/docs/font-family#customizing-your-theme */
+@theme {
+    --font-display: "Tagesschrift", "sans-serif";
+}
