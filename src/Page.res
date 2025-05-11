@@ -1,6 +1,7 @@
 %%raw("import './client'")
 %%raw("import './main.css'")
 
+// This is a wrapper for page components to add in HTML, header, styles, etc...
 @react.component
 let make = (~children) => {
   <html>

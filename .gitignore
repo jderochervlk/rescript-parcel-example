@@ -4,3 +4,4 @@ lib
 dist
 *.mjs
 !src/client.mjs
+main.css

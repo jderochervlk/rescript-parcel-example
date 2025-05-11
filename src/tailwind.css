@@ -3,7 +3,6 @@
 
 /* https: //tailwindcss.com/ */
 @import "tailwindcss";
-@source ".js";
 
 /* https: //tailwindcss.com/docs/font-family#customizing-your-theme */
 @theme {
