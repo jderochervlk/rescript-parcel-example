@@ -5,10 +5,14 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "res:build": "rescript",
-    "parcel": "parcel",
-    "dev:tailwind": "pnpm dlx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --watch",
-    "dev:rescript": "rescript -w"
+    "build:tailwind": "pnpx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --minify",
+    "build:rescript": "rescript",
+    "build:parcel": "parcel build",
+    "build": "pnpm run \"/^build:.*/\"",
+    "dev:tailwind": "pnpx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --watch",
+    "dev:rescript": "rescript -w",
+    "dev:parcel": "parcel --open",
+    "dev": "pnpm run \"/^dev:.*/\""
   },
   "targets": {
     "react-static": {
@@ -31,6 +35,7 @@
     "@parcel/packager-react-static": "^2.14.4",
     "@parcel/transformer-react-static": "^2.14.4",
     "@tailwindcss/postcss": "^4.1.6",
+    "@tailwindcss/typography": "^0.5.16",
     "postcss": "^8.5.3"
   }
 }
