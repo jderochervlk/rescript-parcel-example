@@ -12,7 +12,7 @@
     "build:tailwind": "pnpx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --minify",
     "build:rescript": "rescript",
     "build:parcel": "parcel build",
-    "build": "pnpm run \"/^build:.*/\"",
+    "build": "pnpm build:rescript && pnpm build:tailwind && pnpm build:parcel",
     "dev:tailwind": "pnpx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --watch",
     "dev:rescript": "rescript -w",
     "dev:parcel": "parcel --open",
