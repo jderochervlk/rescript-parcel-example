@@ -4,6 +4,10 @@
   "description": "An example app using Rescript, Parcel, React, and RSC.",
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
   "scripts": {
     "build:tailwind": "pnpx @tailwindcss/cli -i ./src/tailwind.css -o ./src/main.css --minify",
     "build:rescript": "rescript",
